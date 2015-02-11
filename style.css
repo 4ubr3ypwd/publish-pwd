@@ -1,0 +1,130 @@
+/*
+Theme Name: Publish-pwd
+Theme URI:
+Description:
+Author: Aubrey Portwood
+Author URI: http://aubreypwd.com
+Template: publish
+Version: 1.0
+*/
+
+@import url( '../publish/style.css' );
+
+.entry-meta,
+.entry-meta a:link,
+.entry-meta a:visited {
+	color: #999 !important;
+}
+
+.entry-meta a:hover {
+	color: #1E8AB6;
+}
+
+.menu-main-container {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.menu-main-container .menu-item {
+	padding: 5px 10px;
+}
+
+input[type=text], input[type=password], input[type=email], textarea {
+	border: 0 solid #ccc;
+	border-radius: 0;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+	width: 130%;
+	padding: 5px 0;
+}
+
+.site {
+	width: 852px
+}
+
+.widget_search input[type="text"] {
+	width: 100%;
+}
+
+.site-logo img {
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.04);
+	display: block;
+}
+
+#masthead {
+	margin-top: -37px;
+}
+
+.site {
+	margin: 100px auto 60px auto;
+}
+
+#secondary .cat-item {
+	color: #909090;
+}
+
+.site-title a,
+.main-navigation li.current_page_item a,
+.main-navigation li.current-menu-item a,
+.entry-title a {
+	color: #404040;
+}
+
+/* Make categories show hiarchy */
+.widget_categories ul.children {
+	border-left: 1px dotted #ddd;
+	margin-left: 0;
+	padding-left: 10px;
+}
+
+.site-content .gallery {
+	margin: 40px 0 !important;
+	display: block;
+}
+
+.sep {
+	display:block;
+	height: 0;
+	overflow: hidden;
+}
+
+.entry-meta {
+	font-weight: bold;
+	clear: both;
+}
+
+.entry-meta span a {
+	font-weight: normal;
+}
+
+#menu-main {
+	font-weight:bold;
+}
+
+
+img,
+.wp-caption {
+	border-radius: 3px;
+}
+
+/*a[target="_blank"]:after{
+	content: " \2752";
+	content: " \276F";
+	content: " \27B9";
+	content: " \26A1";
+}*/
+
+body {
+	background: url( 'wp-blueprint.jpg' );
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#page {
+	border-radius: 4px;
+	box-shadow: 0 0 19px rgba(0, 0, 0, 0.54);
+}
