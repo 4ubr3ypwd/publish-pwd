@@ -8,7 +8,24 @@ Template: publish
 Version: 1.0
 */
 
-@import url( '../publish/style.css' );
+@media (max-width:1024px) {
+	#page{
+		margin: 0;
+		width: auto;
+	}
+
+	#masthead {
+		margin-top: 40px;
+	}
+}
+
+a {
+	color: #00CDAD;
+}
+
+a:visited {
+	color: #005F81;
+}
 
 .entry-meta,
 .entry-meta a:link,
@@ -105,7 +122,6 @@ input[type=text], input[type=password], input[type=email], textarea {
 	font-weight:bold;
 }
 
-
 img,
 .wp-caption {
 	border-radius: 3px;
@@ -117,12 +133,6 @@ img,
 	content: " \27B9";
 	content: " \26A1";
 }*/
-
-body {
-	background: url( 'wp-blueprint.jpg' );
-	background-attachment: fixed;
-	background-size: cover;
-}
 
 #page {
 	border-radius: 4px;
