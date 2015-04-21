@@ -19,6 +19,10 @@ Version: 1.0
 	}
 }
 
+body {
+	background-size: cover;
+}
+
 a {
 	color: #00CDAD;
 }
@@ -47,7 +51,9 @@ a:visited {
 	padding: 5px 10px;
 }
 
-input[type=text], input[type=password], input[type=email], textarea {
+input[type=text],
+input[type=password],
+input[type=email], textarea {
 	border: 0 solid #ccc;
 	border-radius: 0;
 	color: #666;
@@ -127,14 +133,14 @@ img,
 	border-radius: 3px;
 }
 
-/*a[target="_blank"]:after{
-	content: " \2752";
-	content: " \276F";
-	content: " \27B9";
-	content: " \26A1";
-}*/
-
 #page {
 	border-radius: 4px;
 	box-shadow: 0 0 19px rgba(0, 0, 0, 0.54);
 }
+
+.embed-youtube iframe,
+embed[type="application/x-shockwave-flash"]{
+	height: 350px;
+	width: 100%;
+}
+
