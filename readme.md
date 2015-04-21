@@ -9,6 +9,12 @@ Child theme for my site [aubreypwd.com](http://aubreypwd.com) based on my favori
 
 # Changelog
 
+## 1.1
+
+- Some tweaks to styles
+- Can now use own background
+- Enqueue publish styles instead of `@import`
+
 ## 1.0
 
 - Twitter-like masthead
