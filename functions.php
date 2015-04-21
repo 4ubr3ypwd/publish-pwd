@@ -6,14 +6,14 @@ if ( ! isset( $content_width ) ) {
 
 class Publish_PWD {
 	function __construct() {
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles') );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_publish') );
 	}
 
 	/**
 	 * Enqueues the parent theme's CSS.
 	 */
-	function enqueue_styles() {
-		wp_enqueue_style( 'publish-pwd', get_template_directory_uri() . '/style.css' );
+	function enqueue_publish() {
+		wp_enqueue_style( 'publish', get_template_directory_uri() . '/style.css' );
 	}
 }
 
