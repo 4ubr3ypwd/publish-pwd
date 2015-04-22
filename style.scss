@@ -17,9 +17,9 @@ $color-white: #fff;
 $color-sea-blue: #00CDAD;
 $color-dark-sea-blue: #005F81;
 $color-lightest-grey: #ddd;
-$color-light-grey: #ccc;
-$color-dark-grey: #666;
-$color-super-grey: #404040;
+$color-light-grey: #999;
+$color-dark-grey: darken( $color-light-grey, 20% );
+$color-super-grey: darken( $color-light-grey, 40% );
 $color-wp-blue: #1E8AB6;
 $color-faded-sea-blue: #689AAE;
 
@@ -35,7 +35,7 @@ $a-hover: $color-sea-blue;
 @media (max-width:1024px) {
 	#page{
 		@include margin(0);
-		@include size(auto);
+		width: auto;
 	}
 
 	#masthead {
@@ -49,7 +49,6 @@ body {
 	#page {
 		border-radius: 3px;
 		box-shadow: 0 0 19px $color-dark-shadow;
-
 
 		a {
 			&:link {
@@ -69,11 +68,11 @@ body {
 		input[type=password],
 		input[type=email], textarea {
 			@include padding(5px 0);
-			@include size(130%);
 
-			border-bottom: 1px solid $color-lightest-grey;
+			border-bottom: 1px solid $color-lightest-grey !important;
 			border: none;
 			color: $color-dark-grey;
+			width: 130%;
 		}
 
 		.embed-youtube iframe,
@@ -83,12 +82,10 @@ body {
 		}
 
 		.entry-meta {
-			$entry-meta-color: darken( $color-light-grey, 20% );
-
 			@include clearfix;
+			@include margin(null 40px);
 
 			color: $color-light-grey;
-			font-weight: bold;
 			text-align: center;
 
 			span a {
@@ -98,16 +95,21 @@ body {
 			a {
 
 				&:link {
-					color: $entry-meta-color;
+					color: $color-light-grey;
 				}
 
 				&:visited {
-					color: $entry-meta-color;
+					color: $color-light-grey;
 				}
 
 				&:hover {
 					color: $a-hover;
 				}
+			}
+
+			.sep {
+				@include padding(null 5px);
+				color: lighten( $color-light-grey, 10% );
 			}
 		}
 
@@ -169,12 +171,6 @@ body {
 			display: block;
 		}
 
-		.sep {
-			display:block;
-			height: 0;
-			overflow: hidden;
-		}
-
 		#menu-main {
 			font-weight:bold;
 		}
@@ -182,10 +178,6 @@ body {
 		img,
 		.wp-caption {
 			border-radius: 3px;
-		}
-
-		.post-edit-link {
-			display: none;
 		}
 
 	}

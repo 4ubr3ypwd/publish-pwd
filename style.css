@@ -12,7 +12,6 @@ This CSS was generated via style.scss.
 @media (max-width: 1024px) {
   #page {
     margin: 0;
-    height: auto;
     width: auto; }
 
   #masthead {
@@ -33,18 +32,18 @@ body {
     body #page input[type=password],
     body #page input[type=email], body #page textarea {
       padding: 5px 0;
-      height: 130%;
-      width: 130%;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #ddd !important;
       border: none;
-      color: #666; }
+      color: #666666;
+      width: 130%; }
     body #page .embed-youtube iframe,
     body #page embed[type="application/x-shockwave-flash"] {
       height: 350px;
       width: 100%; }
     body #page .entry-meta {
-      color: #ccc;
-      font-weight: bold;
+      margin-right: 40px;
+      margin-left: 40px;
+      color: #999;
       text-align: center; }
       body #page .entry-meta::after {
         clear: both;
@@ -53,11 +52,15 @@ body {
       body #page .entry-meta span a {
         font-weight: normal; }
       body #page .entry-meta a:link {
-        color: #999999; }
+        color: #999; }
       body #page .entry-meta a:visited {
-        color: #999999; }
+        color: #999; }
       body #page .entry-meta a:hover {
         color: #00CDAD; }
+      body #page .entry-meta .sep {
+        padding-right: 5px;
+        padding-left: 5px;
+        color: #b3b3b3; }
     body #page .menu-main-container {
       background: #fff;
       border-radius: 4px;
@@ -69,7 +72,7 @@ body {
     body #page .site-logo img {
       padding: 5px;
       background: #fff;
-      border: 1px solid #ccc;
+      border: 1px solid #999;
       box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.04);
       display: block; }
     body #page #masthead {
@@ -77,30 +80,24 @@ body {
     body #page .site {
       margin: 100px auto 60px; }
     body #page #secondary .cat-item {
-      color: #666; }
+      color: #666666; }
     body #page .site-title a,
     body #page .main-navigation li.current_page_item a,
     body #page .main-navigation li.current-menu-item a,
     body #page .entry-title a {
-      color: #404040; }
+      color: #333333; }
     body #page .widget_categories ul.children {
       padding-left: 10px;
       margin-left: 0;
-      border-left: 1px dotted #ccc; }
+      border-left: 1px dotted #999; }
     body #page .site-content .gallery {
       margin: 40px 0 !important;
       display: block; }
-    body #page .sep {
-      display: block;
-      height: 0;
-      overflow: hidden; }
     body #page #menu-main {
       font-weight: bold; }
     body #page img,
     body #page .wp-caption {
       border-radius: 3px; }
-    body #page .post-edit-link {
-      display: none; }
   body .site {
     width: 852px; }
 
