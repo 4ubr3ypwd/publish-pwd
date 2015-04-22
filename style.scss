@@ -1,0 +1,198 @@
+/*
+Theme Name: Publish-pwd
+Theme URI:
+Description:
+Author: Aubrey Portwood
+Author URI: http://aubreypwd.com
+Template: publish
+Version: 1.0
+
+This CSS was generated via style.scss.
+*/
+
+@import "bourbon/bourbon";
+
+// Colors
+$color-white: #fff;
+$color-sea-blue: #00CDAD;
+$color-dark-sea-blue: #005F81;
+$color-lightest-grey: #ddd;
+$color-light-grey: #ccc;
+$color-dark-grey: #666;
+$color-super-grey: #404040;
+$color-wp-blue: #1E8AB6;
+$color-faded-sea-blue: #689AAE;
+
+// Shadows
+$color-light-shadow: rgba(0, 0, 0, 0.04);
+$color-dark-shadow: rgba(0, 0, 0, 0.54);
+
+// Links
+$a-link: $color-wp-blue;
+$a-visited: $color-faded-sea-blue;
+$a-hover: $color-sea-blue;
+
+@media (max-width:1024px) {
+	#page{
+		@include margin(0);
+		@include size(auto);
+	}
+
+	#masthead {
+		@include margin(40px 0 0 0);
+	}
+}
+
+body {
+	background-size: cover;
+
+	#page {
+		border-radius: 3px;
+		box-shadow: 0 0 19px $color-dark-shadow;
+
+
+		a {
+			&:link {
+				color: $a-link;
+			}
+
+			&:visited {
+				color: $a-visited;
+			}
+
+			&:hover {
+				color: $a-hover;
+			}
+		}
+
+		input[type=text],
+		input[type=password],
+		input[type=email], textarea {
+			@include padding(5px 0);
+			@include size(130%);
+
+			border-bottom: 1px solid $color-lightest-grey;
+			border: none;
+			color: $color-dark-grey;
+		}
+
+		.embed-youtube iframe,
+		embed[type="application/x-shockwave-flash"]{
+			height: 350px;
+			width: 100%;
+		}
+
+		.entry-meta {
+			$entry-meta-color: darken( $color-light-grey, 20% );
+
+			@include clearfix;
+
+			color: $color-light-grey;
+			font-weight: bold;
+			text-align: center;
+
+			span a {
+				font-weight: normal;
+			}
+
+			a {
+
+				&:link {
+					color: $entry-meta-color;
+				}
+
+				&:visited {
+					color: $entry-meta-color;
+				}
+
+				&:hover {
+					color: $a-hover;
+				}
+			}
+		}
+
+		.menu-main-container {
+			background: $color-white;
+			border-radius: 4px;
+			border: 1px solid $color-lightest-grey;
+
+			.menu-item {
+				@include padding(5px 10px);
+			}
+		}
+
+		.widget_search input[type="text"] {
+			width: 100%;
+		}
+
+		.site-logo {
+			img {
+				@include padding(5px);
+
+				background: $color-white;
+				border: 1px solid $color-light-grey;
+				box-shadow: 1px 2px 2px $color-light-shadow;
+				display: block;
+			}
+		}
+
+		#masthead {
+			@include margin(-37px null null null);
+		}
+
+		.site {
+			@include margin(100px auto 60px auto);
+		}
+
+		#secondary .cat-item {
+			color: $color-dark-grey;
+		}
+
+		.site-title a,
+		.main-navigation li.current_page_item a,
+		.main-navigation li.current-menu-item a,
+		.entry-title a {
+			color: $color-super-grey;
+		}
+
+		/* Make categories show hiarchy */
+		.widget_categories ul.children {
+			@include padding(null null 10px null);
+			@include margin(null null null 0);
+
+			border-left: 1px dotted $color-light-grey;
+		}
+
+		.site-content .gallery {
+			@include margin(40px 0 !important);
+
+			display: block;
+		}
+
+		.sep {
+			display:block;
+			height: 0;
+			overflow: hidden;
+		}
+
+		#menu-main {
+			font-weight:bold;
+		}
+
+		img,
+		.wp-caption {
+			border-radius: 3px;
+		}
+
+		.post-edit-link {
+			display: none;
+		}
+
+	}
+
+	// Width of the site compared to the background.
+	.site {
+		width: 852px
+	}
+
+}
