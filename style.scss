@@ -32,17 +32,6 @@ $a-link: $color-wp-blue;
 $a-visited: $color-faded-sea-blue;
 $a-hover: $color-sea-blue;
 
-@media (max-width:1024px) {
-	#page{
-		@include margin(0);
-		width: auto;
-	}
-
-	#masthead {
-		@include margin(40px 0 0 0);
-	}
-}
-
 body {
 	background-size: cover;
 
@@ -142,10 +131,6 @@ body {
 			@include margin(-37px null null null);
 		}
 
-		.site {
-			@include margin(100px auto 60px auto);
-		}
-
 		#secondary .cat-item {
 			color: $color-dark-grey;
 		}
@@ -184,7 +169,49 @@ body {
 
 	// Width of the site compared to the background.
 	.site {
-		width: 852px
+		@include margin(15% auto 60px auto);
+
+		width: 852px;
 	}
 
+}
+
+// Uhg, I know, hacky....
+@media only screen and (max-width: 1024px) {
+
+	#page{
+		@include margin(10% 20px 20px);
+		width: auto;
+	}
+
+	#masthead {
+		margin-top: 20px !important;
+
+		hgroup {
+			margin-left: 20px;
+		}
+	}
+
+	.site-navigation {
+		background: transparent;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+	#page{
+		.menu-main-container {
+			border: none !important;
+
+			.menu-item {
+				padding: 0 !important;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.main-small-navigation .menu-toggle.toggled-on {
+		background: transparent;
+	}
 }

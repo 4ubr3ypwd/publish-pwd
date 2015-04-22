@@ -9,13 +9,6 @@ Version: 1.0
 
 This CSS was generated via style.scss.
 */
-@media (max-width: 1024px) {
-  #page {
-    margin: 0;
-    width: auto; }
-
-  #masthead {
-    margin: 40px 0 0; } }
 body {
   background-size: cover; }
   body #page {
@@ -77,8 +70,6 @@ body {
       display: block; }
     body #page #masthead {
       margin-top: -37px; }
-    body #page .site {
-      margin: 100px auto 60px; }
     body #page #secondary .cat-item {
       color: #666666; }
     body #page .site-title a,
@@ -99,6 +90,28 @@ body {
     body #page .wp-caption {
       border-radius: 3px; }
   body .site {
+    margin: 15% auto 60px;
     width: 852px; }
+
+@media only screen and (max-width: 1024px) {
+  #page {
+    margin: 10% 20px 20px;
+    width: auto; }
+
+  #masthead {
+    margin-top: 20px !important; }
+    #masthead hgroup {
+      margin-left: 20px; }
+
+  .site-navigation {
+    background: transparent; } }
+@media only screen and (max-width: 640px) {
+  #page .menu-main-container {
+    border: none !important; }
+    #page .menu-main-container .menu-item {
+      padding: 0 !important; } }
+@media only screen and (max-width: 900px) {
+  .main-small-navigation .menu-toggle.toggled-on {
+    background: transparent; } }
 
 /*# sourceMappingURL=style.css.map */
