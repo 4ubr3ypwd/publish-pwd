@@ -157,7 +157,7 @@ body {
 
 		/* Make categories show hiarchy */
 		.widget_categories ul.children {
-			@include padding(null null 10px null);
+			@include padding(null null null 10px);
 			@include margin(null null null 0);
 
 			border-left: 1px dotted $color-light-grey;

@@ -84,7 +84,7 @@ body {
     body #page .entry-title a {
       color: #404040; }
     body #page .widget_categories ul.children {
-      padding-bottom: 10px;
+      padding-left: 10px;
       margin-left: 0;
       border-left: 1px dotted #ccc; }
     body #page .site-content .gallery {
