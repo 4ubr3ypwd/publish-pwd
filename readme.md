@@ -9,6 +9,12 @@ Child theme for my site [aubreypwd.com](http://aubreypwd.com) based on my favori
 
 # Changelog
 
+## 1.2
+
+- Sass added
+- Fixed Mobile
+- Merge in custom styles
+
 ## 1.1
 
 - Some tweaks to styles
