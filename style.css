@@ -15,16 +15,16 @@ body {
     border-radius: 3px;
     /* Make categories show hiarchy */ }
     body #page a:link {
-      color: #fda34d; }
+      color: #2492ad; }
     body #page a:visited {
-      color: #fc891b; }
+      color: #2492ad; }
     body #page a:hover {
       color: #fd3e3f; }
     body #page input[type=text],
     body #page input[type=password],
     body #page input[type=email], body #page textarea {
       padding: 5px 0;
-      border-bottom: 1px solid #f484b3 !important;
+      border-bottom: 1px solid #2492ad !important;
       border: none;
       border-radius: 0;
       color: #666666;
@@ -85,7 +85,7 @@ body {
     body #page h2,
     body #page h3,
     body #page h4 {
-      color: #550101; }
+      color: #0e3943; }
     body #page .widget_categories ul.children {
       padding-left: 10px;
       margin-left: 0;

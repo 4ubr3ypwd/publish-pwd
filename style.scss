@@ -33,17 +33,18 @@ $blue-color-wp-blue: #1E8AB6;
 $wds-color-pumpkin: #fda34d;
 $wds-color-purple: #cc1361;
 $wds-color-hot-orange: #fd3e3f;
+$wds-color-blue: #2492ad;
 
 // Theme vars.
 $theme-a-hover: $wds-color-hot-orange;
-$theme-a-link: $wds-color-pumpkin;
-$theme-a-visited: darken($wds-color-pumpkin, 10%);
+$theme-a-link: $wds-color-blue;
+$theme-a-visited: $wds-color-blue;
 $theme-categories-left-gutter-color: lighten($wds-color-purple, 30%);
-$theme-consistent-base-link-color: darken($wds-color-hot-orange, 45%);
+$theme-consistent-base-link-color: darken($wds-color-blue, 25%);
 $theme-entry-meta-base-color: $base-color-light-grey;
 $theme-entry-meta-hover-color: $theme-a-hover;
 $theme-entry-meta-sep-color: $base-color-light-grey;
-$theme-input-border-bottom: lighten($wds-color-purple, 30%);
+$theme-input-border-bottom: $wds-color-blue;
 $theme-logo-image-backgroung-color: $base-color-white;
 $theme-logo-image-border-color: rgba($base-color-light-grey, 0.5);
 $theme-logo-image-box-shadow: rgba($base-color-light-shadow, 0.5);
