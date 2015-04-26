@@ -9,7 +9,7 @@ Child theme for my site [aubreypwd.com](http://aubreypwd.com) based on my favori
 
 # Changelog
 
-## 1.3
+## 1.3 "WDS"
 
 - New WDSified theme!
 - Removed a lot of the box-shadows
