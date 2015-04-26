@@ -54,11 +54,17 @@ body {
         padding-right: 5px;
         padding-left: 5px;
         color: #b3b3b3; }
-    body #page .menu-main-container {
+    body #page .menu-main-container,
+    body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 4px; list-style-type: none;"],
+    body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"],
+    body #page div[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"] {
       background: #fff;
       border-radius: 3px;
-      border: 1px solid #fce2ed; }
-      body #page .menu-main-container .menu-item {
+      border: 1px solid #fce2ed !important; }
+      body #page .menu-main-container .menu-item,
+      body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 4px; list-style-type: none;"] .menu-item,
+      body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"] .menu-item,
+      body #page div[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"] .menu-item {
         padding: 5px 10px; }
     body #page .widget_search input[type="text"] {
       width: 100%; }
