@@ -24,8 +24,9 @@ body {
     body #page input[type=password],
     body #page input[type=email], body #page textarea {
       padding: 5px 0;
-      border-bottom: 1px solid #ddd !important;
+      border-bottom: 1px solid #f484b3 !important;
       border: none;
+      border-radius: 0;
       color: #666666;
       min-width: 100%; }
     body #page .embed-youtube iframe,
@@ -56,7 +57,7 @@ body {
     body #page .menu-main-container {
       background: #fff;
       border-radius: 3px;
-      border: 1px solid #ddd; }
+      border: 1px solid #fce2ed; }
       body #page .menu-main-container .menu-item {
         padding: 5px 10px; }
     body #page .widget_search input[type="text"] {
@@ -82,7 +83,7 @@ body {
     body #page .widget_categories ul.children {
       padding-left: 10px;
       margin-left: 0;
-      border-left: 1px dotted #999; }
+      border-left: 1px solid #f484b3; }
     body #page .site-content .gallery {
       margin: 40px 0 !important;
       display: block; }

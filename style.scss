@@ -38,17 +38,17 @@ $wds-color-hot-orange: #fd3e3f;
 $theme-a-hover: $wds-color-hot-orange;
 $theme-a-link: $wds-color-pumpkin;
 $theme-a-visited: darken($wds-color-pumpkin, 10%);
-$theme-categories-left-gutter-color: $base-color-light-grey;
+$theme-categories-left-gutter-color: lighten($wds-color-purple, 30%);
 $theme-consistent-base-link-color: darken($wds-color-hot-orange, 45%);
 $theme-entry-meta-base-color: $base-color-light-grey;
 $theme-entry-meta-hover-color: $theme-a-hover;
 $theme-entry-meta-sep-color: $base-color-light-grey;
-$theme-input-border-bottom: $base-color-lightest-grey;
+$theme-input-border-bottom: lighten($wds-color-purple, 30%);
 $theme-logo-image-backgroung-color: $base-color-white;
 $theme-logo-image-border-color: rgba($base-color-light-grey, 0.5);
 $theme-logo-image-box-shadow: rgba($base-color-light-shadow, 0.5);
 $theme-main-menu-background-color: $base-color-white;
-$theme-main-menu-border-color: $base-color-lightest-grey;
+$theme-main-menu-border-color: lighten($wds-color-purple, 50%);
 $theme-page-box-shadow: $base-color-dark-shadow;
 $theme-sidebar-category-color: $base-color-dark-grey;
 
@@ -80,6 +80,7 @@ body {
 
 			border-bottom: 1px solid $theme-input-border-bottom !important;
 			border: none;
+			border-radius: 0;
 			color: $base-color-dark-grey;
 			min-width: 100%;
 		}
@@ -172,7 +173,7 @@ body {
 			@include padding(null null null 10px);
 			@include margin(null null null 0);
 
-			border-left: 1px dotted $theme-categories-left-gutter-color;
+			border-left: 1px solid $theme-categories-left-gutter-color;
 		}
 
 		.site-content .gallery {
