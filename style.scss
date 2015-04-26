@@ -12,44 +12,64 @@ This CSS was generated via style.scss.
 
 @import "bourbon/bourbon";
 
-// Colors
-$color-white: #fff;
-$color-sea-blue: #00CDAD;
-$color-dark-sea-blue: #005F81;
-$color-lightest-grey: #ddd;
-$color-light-grey: #999;
-$color-dark-grey: darken( $color-light-grey, 20% );
-$color-super-grey: darken( $color-light-grey, 40% );
-$color-wp-blue: #1E8AB6;
-$color-faded-sea-blue: #689AAE;
+// Base
+$base-color-dark-shadow: rgba(0, 0, 0, 0.54);
+$base-color-light-grey: #999;
+$base-color-light-shadow: rgba(0, 0, 0, 0.04);
+$base-color-lightest-grey: #ddd;
+$base-color-white: #fff;
 
-// Shadows
-$color-light-shadow: rgba(0, 0, 0, 0.04);
-$color-dark-shadow: rgba(0, 0, 0, 0.54);
+	// Base mods.
+	$base-color-dark-grey: darken( $base-color-light-grey, 20% );
+	$base-color-super-grey: darken( $base-color-light-grey, 40% );
 
-// Links
-$a-link: $color-wp-blue;
-$a-visited: $color-faded-sea-blue;
-$a-hover: $color-sea-blue;
+// Colors (Blue)
+$blue-color-dark-sea-blue: #005F81;
+$blue-color-faded-sea-blue: #689AAE;
+$blue-color-sea-blue: #00CDAD;
+$blue-color-wp-blue: #1E8AB6;
+
+// Colors (WDS)
+$wds-color-pumpkin: #fda34d;
+$wds-color-purple: #cc1361;
+$wds-color-hot-orange: #fd3e3f;
+
+// Theme vars.
+$theme-a-hover: $wds-color-hot-orange;
+$theme-a-link: $wds-color-pumpkin;
+$theme-a-visited: darken($wds-color-pumpkin, 10%);
+$theme-categories-left-gutter-color: $base-color-light-grey;
+$theme-consistent-base-link-color: darken($wds-color-hot-orange, 45%);
+$theme-entry-meta-base-color: $base-color-light-grey;
+$theme-entry-meta-hover-color: $theme-a-hover;
+$theme-entry-meta-sep-color: $base-color-light-grey;
+$theme-input-border-bottom: $base-color-lightest-grey;
+$theme-logo-image-backgroung-color: $base-color-white;
+$theme-logo-image-border-color: rgba($base-color-light-grey, 0.5);
+$theme-logo-image-box-shadow: rgba($base-color-light-shadow, 0.5);
+$theme-main-menu-background-color: $base-color-white;
+$theme-main-menu-border-color: $base-color-lightest-grey;
+$theme-page-box-shadow: $base-color-dark-shadow;
+$theme-sidebar-category-color: $base-color-dark-grey;
 
 body {
 	background-size: cover;
 
 	#page {
 		border-radius: 3px;
-		box-shadow: 0 0 19px $color-dark-shadow;
+		//box-shadow: 0 0 19px $theme-page-box-shadow;
 
 		a {
 			&:link {
-				color: $a-link;
+				color: $theme-a-link;
 			}
 
 			&:visited {
-				color: $a-visited;
+				color: $theme-a-visited;
 			}
 
 			&:hover {
-				color: $a-hover;
+				color: $theme-a-hover;
 			}
 		}
 
@@ -58,10 +78,10 @@ body {
 		input[type=email], textarea {
 			@include padding(5px 0);
 
-			border-bottom: 1px solid $color-lightest-grey !important;
+			border-bottom: 1px solid $theme-input-border-bottom !important;
 			border: none;
-			color: $color-dark-grey;
-			width: 130%;
+			color: $base-color-dark-grey;
+			min-width: 100%;
 		}
 
 		.embed-youtube iframe,
@@ -74,7 +94,7 @@ body {
 			@include clearfix;
 			@include margin(null 40px);
 
-			color: $color-light-grey;
+			color: $theme-entry-meta-base-color;
 			text-align: center;
 
 			span a {
@@ -84,28 +104,28 @@ body {
 			a {
 
 				&:link {
-					color: $color-light-grey;
+					color: $theme-entry-meta-base-color;
 				}
 
 				&:visited {
-					color: $color-light-grey;
+					color: $theme-entry-meta-base-color;
 				}
 
 				&:hover {
-					color: $a-hover;
+					color: $theme-entry-meta-hover-color;
 				}
 			}
 
 			.sep {
 				@include padding(null 5px);
-				color: lighten( $color-light-grey, 10% );
+				color: lighten( $theme-entry-meta-sep-color, 10% );
 			}
 		}
 
 		.menu-main-container {
-			background: $color-white;
-			border-radius: 4px;
-			border: 1px solid $color-lightest-grey;
+			background: $theme-main-menu-background-color;
+			border-radius: 3px;
+			border: 1px solid $theme-main-menu-border-color;
 
 			.menu-item {
 				@include padding(5px 10px);
@@ -119,10 +139,11 @@ body {
 		.site-logo {
 			img {
 				@include padding(5px);
+				@include margin(null null null -5px);
 
-				background: $color-white;
-				border: 1px solid $color-light-grey;
-				box-shadow: 1px 2px 2px $color-light-shadow;
+				background: $theme-logo-image-backgroung-color;
+				// border: 1px solid $theme-logo-image-border-color;
+				// box-shadow: 1px 2px 2px $theme-logo-image-box-shadow;
 				display: block;
 			}
 		}
@@ -132,14 +153,18 @@ body {
 		}
 
 		#secondary .cat-item {
-			color: $color-dark-grey;
+			color: $theme-sidebar-category-color;
 		}
 
 		.site-title a,
 		.main-navigation li.current_page_item a,
 		.main-navigation li.current-menu-item a,
-		.entry-title a {
-			color: $color-super-grey;
+		.entry-title a,
+		h1,
+		h2,
+		h3,
+		h4 {
+			color: $theme-consistent-base-link-color;
 		}
 
 		/* Make categories show hiarchy */
@@ -147,7 +172,7 @@ body {
 			@include padding(null null null 10px);
 			@include margin(null null null 0);
 
-			border-left: 1px dotted $color-light-grey;
+			border-left: 1px dotted $theme-categories-left-gutter-color;
 		}
 
 		.site-content .gallery {

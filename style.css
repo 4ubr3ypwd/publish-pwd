@@ -13,14 +13,13 @@ body {
   background-size: cover; }
   body #page {
     border-radius: 3px;
-    box-shadow: 0 0 19px rgba(0, 0, 0, 0.54);
     /* Make categories show hiarchy */ }
     body #page a:link {
-      color: #1E8AB6; }
+      color: #fda34d; }
     body #page a:visited {
-      color: #689AAE; }
+      color: #fc891b; }
     body #page a:hover {
-      color: #00CDAD; }
+      color: #fd3e3f; }
     body #page input[type=text],
     body #page input[type=password],
     body #page input[type=email], body #page textarea {
@@ -28,7 +27,7 @@ body {
       border-bottom: 1px solid #ddd !important;
       border: none;
       color: #666666;
-      width: 130%; }
+      min-width: 100%; }
     body #page .embed-youtube iframe,
     body #page embed[type="application/x-shockwave-flash"] {
       height: 350px;
@@ -49,14 +48,14 @@ body {
       body #page .entry-meta a:visited {
         color: #999; }
       body #page .entry-meta a:hover {
-        color: #00CDAD; }
+        color: #fd3e3f; }
       body #page .entry-meta .sep {
         padding-right: 5px;
         padding-left: 5px;
         color: #b3b3b3; }
     body #page .menu-main-container {
       background: #fff;
-      border-radius: 4px;
+      border-radius: 3px;
       border: 1px solid #ddd; }
       body #page .menu-main-container .menu-item {
         padding: 5px 10px; }
@@ -64,9 +63,8 @@ body {
       width: 100%; }
     body #page .site-logo img {
       padding: 5px;
+      margin-left: -5px;
       background: #fff;
-      border: 1px solid #999;
-      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.04);
       display: block; }
     body #page #masthead {
       margin-top: -37px; }
@@ -75,8 +73,12 @@ body {
     body #page .site-title a,
     body #page .main-navigation li.current_page_item a,
     body #page .main-navigation li.current-menu-item a,
-    body #page .entry-title a {
-      color: #333333; }
+    body #page .entry-title a,
+    body #page h1,
+    body #page h2,
+    body #page h3,
+    body #page h4 {
+      color: #550101; }
     body #page .widget_categories ul.children {
       padding-left: 10px;
       margin-left: 0;
