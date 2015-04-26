@@ -9,6 +9,12 @@ Child theme for my site [aubreypwd.com](http://aubreypwd.com) based on my favori
 
 # Changelog
 
+## 1.3
+
+- New WDSified theme!
+- Removed a lot of the box-shadows
+- Hard lines, not dotted lines
+
 ## 1.2
 
 - Sass added
