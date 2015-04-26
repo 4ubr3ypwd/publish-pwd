@@ -60,7 +60,7 @@ body {
     body #page div[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"] {
       background: #fff;
       border-radius: 3px;
-      border: 1px solid #fce2ed !important; }
+      border: 1px solid #ddd !important; }
       body #page .menu-main-container .menu-item,
       body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 4px; list-style-type: none;"] .menu-item,
       body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"] .menu-item,
