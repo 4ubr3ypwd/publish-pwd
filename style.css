@@ -10,25 +10,28 @@ Version: 1.2
 This CSS was generated via style.scss.
 */
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
 body {
 	background-size: cover;
+	font-family: 'Roboto', sans-serif;
 }
 
 body #page {
 	border-radius: 3px;
-	/* Make categories show hiarchy */
+	margin-top: 10%;
 }
 
 body #page a:link {
-	color: #2492ad;
+	color: #50AF87;
 }
 
 body #page a:visited {
-	color: #2492ad;
+	color: #50AF87;
 }
 
 body #page a:hover {
-	color: #fd3e3f;
+	color: #226EA2;
 }
 
 body #page input[type=text],
@@ -36,7 +39,7 @@ body #page input[type=password],
 body #page input[type=email],
 body #page textarea {
 	padding: 5px 0;
-	border-bottom: 1px solid #2492ad !important;
+	border-bottom: 1px solid #50AF87 !important;
 	border: none;
 	border-radius: 0;
 	color: #666666;
@@ -75,7 +78,7 @@ body #page .entry-meta a:visited {
 }
 
 body #page .entry-meta a:hover {
-	color: #fd3e3f;
+	color: #226EA2;
 }
 
 body #page .entry-meta .sep {
@@ -84,20 +87,9 @@ body #page .entry-meta .sep {
 	color: #b3b3b3;
 }
 
-body #page .menu-main-container,
-body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 4px; list-style-type: none;"],
-body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"],
-body #page div[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"] {
+body #page .menu-main-container {
 	background: #fff;
 	border-radius: 3px;
-	border: 1px solid #ddd !important;
-}
-
-body #page .menu-main-container .menu-item,
-body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 4px; list-style-type: none;"] .menu-item,
-body #page ul[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"] .menu-item,
-body #page div[style="float: right; width: 20%; padding: 5px 10px; border: 1px solid #ddd; border-radius: 3px; list-style-type: none;"] .menu-item {
-	padding: 5px 10px;
 }
 
 body #page .widget_search input[type="text"] {
@@ -133,7 +125,7 @@ body #page h4 {
 body #page .widget_categories ul.children {
 	padding-left: 10px;
 	margin-left: 0;
-	border-left: 1px solid #f484b3;
+	border-left: 1px solid #226EA2;
 }
 
 body #page .site-content .gallery {
@@ -151,40 +143,66 @@ body #page .wp-caption {
 }
 
 body .site {
-	margin: 15% auto 60px;
 	width: 852px;
 }
 
 @media only screen and (max-width: 1024px) {
 	#page {
-			margin: 10% 20px 20px;
-			width: auto;
-		}
-		#masthead {
-			margin-top: 20px !important;
-		}
-		#masthead hgroup {
-			margin-left: 20px;
-		}
-		.site-navigation {
-			background: transparent;
-		}
+		/*margin: 10% 20px 20px;*/
+		width: auto;
+	}
+
+	#masthead {
+		margin-top: 20px !important;
+	}
+
+	#masthead hgroup {
+		margin-left: 20px;
+	}
+	.site-navigation {
+		background: transparent;
+	}
 }
 
 @media only screen and (max-width: 640px) {
-		#page .menu-main-container {
-			border: none !important;
-		}
-		#page .menu-main-container .menu-item {
-			padding: 0 !important;
-		}
+	body {
+		background-attachment: fixed;
+	}
+
+	body #page {
+		margin-top: 0;
+	}
+
+	#masthead {
+		margin-bottom: 0;
+	}
+
+	.site-title,
+	.site-description {
+		margin-left: 50px;
+	}
+
+	.site-description {
+		margin-bottom: 0;
+	}
+
+	body #page {
+		border-radius: 0;
+	}
+
+	#wpadminbar {
+		position: fixed;
+	}
+
+	#page .menu-main-container {
+		border: none !important;
+	}
 }
 
 @media only screen and (max-width: 900px) {
-		.main-small-navigation .menu-toggle.toggled-on {
-			background: transparent;
-		}
+	.main-small-navigation .menu-toggle.toggled-on {
+		background: transparent;
+	}
 }
 
 
-/*# sourceMappingURL=style.css.map */
