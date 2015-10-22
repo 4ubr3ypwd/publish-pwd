@@ -10,11 +10,12 @@ Version: 1.2
 This CSS was generated via style.scss.
 */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic);
 
 body {
 	background-size: cover;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 
 body #page {
