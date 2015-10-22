@@ -213,4 +213,11 @@ body .site {
 	}
 }
 
+.site-main article {
+	padding-bottom: 20px;
+}
 
+/* Don't show the Infinite Credits (because it's ugly) */
+#infinite-footer {
+	display: none;
+}
