@@ -43,8 +43,15 @@ body #page textarea {
 	border-bottom: 1px solid #eee !important;
 	border: none;
 	border-radius: 0;
-	color: #666666;
+	color: #000;
 	min-width: 100%;
+}
+
+input,
+textarea,
+[contenteditable="true"] {
+	outline-width: 0;
+	outline: none;
 }
 
 body #page .embed-youtube iframe,
