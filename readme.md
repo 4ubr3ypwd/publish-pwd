@@ -9,7 +9,16 @@ Child theme for my site [aubreypwd.com](http://aubreypwd.com) based on my favori
 
 # Changelog
 
-## 1.3.1 "Newmexicoify"
+## 1.4 "My Gravatar"
+
+Mostly just small amounts of work to mobile and colors to match
+the gravatar I'm sporting.
+
+- Un-sassified (Because I don't want to mess with Grunt)
+- Add "Roboto" Google Font (close to San Fransisco)
+- Fix the masthead and menu on mobile
+
+## 1.3.1
 
 - Added a blue, it was just too orange.
 
