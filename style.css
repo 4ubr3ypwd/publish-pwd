@@ -40,7 +40,7 @@ body #page input[type=password],
 body #page input[type=email],
 body #page textarea {
 	padding: 5px 0;
-	border-bottom: 1px solid #50AF87 !important;
+	border-bottom: 1px solid #eee !important;
 	border: none;
 	border-radius: 0;
 	color: #666666;
